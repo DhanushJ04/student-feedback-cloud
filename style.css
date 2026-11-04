@@ -1,0 +1,170 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Main Container */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 28px;
+}
+
+header p {
+    margin: 6px 0;
+    color: #dbeafe;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #1e40af;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+/* Form Inputs */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#submitBtn {
+    width: 100%;
+}
+
+/* Status Message */
+#message {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Feedback Cards */
+.feedback-item {
+    background: #f8fafc;
+    border-left: 4px solid #2563eb;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.feedback-item h3 {
+    margin: 0 0 10px;
+    color: #1e40af;
+}
+
+.feedback-item p {
+    margin: 7px 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

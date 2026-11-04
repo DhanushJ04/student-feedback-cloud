@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cloud Student Feedback System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student Feedback Management System</h1>
+        <p>Cloud Computing Mini Project</p>
+        <p>Powered by Firebase Cloud Firestore</p>
+      </header>
+
+      <!-- Student Feedback Form -->
+      <section class="card">
+        <h2>Submit Your Feedback</h2>
+
+        <form id="feedbackForm">
+          <label for="name">Student Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            maxlength="60"
+            required
+          />
+
+          <label for="subject">Select Subject</label>
+          <select id="subject" required>
+            <option value="">Choose Subject</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Database Management">Database Management</option>
+          </select>
+
+          <label for="rating">Rating</label>
+          <select id="rating" required>
+            <option value="">Select Rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <label for="feedback">Your Feedback</label>
+          <textarea
+            id="feedback"
+            rows="4"
+            maxlength="1000"
+            placeholder="Write your feedback here..."
+            required
+          ></textarea>
+
+          <button type="submit" id="submitBtn">Submit Feedback</button>
+        </form>
+
+        <p id="message" role="status"></p>
+      </section>
+
+      <!-- Display Submitted Feedback -->
+      <section class="card">
+        <h2>Submitted Feedback</h2>
+
+        <button type="button" id="refreshBtn">Refresh Feedback</button>
+
+        <div id="feedbackList">
+          <p>No feedback available yet.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Cloud-Based Student Feedback System</p>
+        <p>Developed for Academic Mini Project</p>
+      </footer>
+    </div>
+
+    <!-- Firebase JavaScript -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
